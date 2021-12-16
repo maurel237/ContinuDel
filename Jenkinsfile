@@ -21,7 +21,7 @@ pipeline {
     		steps {
     			script {
             //sh "curl -sL https://deb.nodesource.com/setup_16.x | bash -"
-            sh " apt-get install nodejs -y"
+            //sh " apt-get install nodejs -y"
             //sh " npm install npm@latest -g"
             sh " npm install -g @angular/cli"
     				sh "ansible-playbook  ansible/build.yml -i ansible/inventory/host.yml "
