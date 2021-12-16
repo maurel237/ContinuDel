@@ -20,6 +20,13 @@ pipeline {
     	stage ('build') {
     		steps {
     			script {
+            sh "curl -sL https://deb.nodesource.com/setup_14.15.5 | bash -"
+            sh "apt-get install nodejs -y"
+            sh "node --version"
+            sh "npm install npm@latest -g"
+            sh "npm --version"
+            sh "npm install -g @angular/cli"
+            sh "ng version"
     				sh "ansible-playbook  ansible/build.yml -i ansible/inventory/host.yml "
     			}
     		}
