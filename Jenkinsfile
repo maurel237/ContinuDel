@@ -7,7 +7,7 @@ pipeline
 	              script(
 	                  checkout([$class: 'GitSCM' , branches : [[name : '*/master']],
 	                  userRemoteConfigs : [[
-	                  	credentialsId : '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',
+	                  	credentialsId : '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',
 	                  	url : 'https://github.com/maurel237/ContinuDel.git']]
 	                  	 ]
 	                  	)
