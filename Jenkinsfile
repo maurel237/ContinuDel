@@ -21,7 +21,6 @@ pipeline {
     		steps {
     			script {
             sh "npm install -g @angular/cli"
-            sh "ng version"
     				sh "ansible-playbook  ansible/build.yml -i ansible/inventory/host.yml "
     			}
     		}
