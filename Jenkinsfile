@@ -20,7 +20,7 @@ pipeline {
     	stage ('build') {
     		steps {
     			script {
-            sh "curl -sL https://deb.nodesource.com/setup_14.15 | bash -"
+            sh "curl -sL https://deb.nodesource.com/setup_15.x | bash -"
             sh "apt-get install nodejs -y"
             sh "node --version"
             sh "npm install npm@latest -g"
