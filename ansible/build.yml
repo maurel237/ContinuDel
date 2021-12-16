@@ -1,6 +1,4 @@
 ---
- -hosts: localhost
-   gather_facts:true
-   become:true
+- hosts: webservers
   roles:
-      - { role: build}
+    - role: 'build'
